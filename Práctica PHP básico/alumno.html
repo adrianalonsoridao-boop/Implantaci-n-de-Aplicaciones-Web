@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .container{
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        .container2{
+            display: flex;
+        }
+        .ense{
+            display: flex;
+        }
+        .nombre{
+            margin-right: 2rem;
+        }
+        .ense1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="datos_alumno.php" method="post">
+        <div class="container">
+            <h2>DATOS DE ALUMNO</h2>
+                <div class="formulario">
+                    <div class="container2">
+                        <div class="nombre">
+                            Introduzca su nombre: <input type="text" name="nombre">
+                        </div>
+                        <div class="ense1">
+                            Enseñanza:
+                            <div class="ense">
+                                <div>
+                                    <input type="radio" name="ensenanza" value="Secundaria">Secundaria<br>
+                                    <input type="radio" name="ensenanza" value="Ciclo Medio">Ciclo Medio<br>
+                                </div>
+                                <div>
+                                    <input type="radio" name="ensenanza" value="Bachillerato"> Bachillerato<br>
+                                    <input type="radio" name="ensenanza" value="Ciclo Superior">Ciclo Superior<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="telf">
+                        Introduzca su teléfono: <input type="text" name="telefono"><input type="checkbox" name="matriculado">Matriculado
+                    </div>
+                    <div>
+                        Mostrar datos:
+                        <select name="datos">
+                            <option value="1">Por pantalla</option>
+                            <option value="0">En archivo de datos .txt</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <button type="submit">Enviar datos</button>
+    </form>
+</body>
+</html>
